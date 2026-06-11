@@ -1,4 +1,4 @@
-# 🏋️‍♂️ GymFlow - Smart SaaS Architecture
+# 🏋️‍♂️ GymHub - Smart SaaS Architecture
 
 > Ecossistema B2B2C para academias focado em roteamento inteligente de filas, gamificação estrita e eliminação de atrito operacional.
 
@@ -9,7 +9,7 @@
 
 ## 📖 Visão Geral
 
-O **GymFlow** é uma plataforma SaaS Multi-Tenant projetada para transformar a gestão de treinos e a experiência física dentro de pequenas e médias academias. Através de um aplicativo móvel e um motor de regras de negócio robusto, o ecossistema automatiza a criação de fichas, gerencia filas virtuais de equipamentos em tempo real e aplica gatilhos psicológicos de gamificação (Streaks e Leaderboards) para maximizar a retenção de alunos.
+O **GymHub** é uma plataforma SaaS Multi-Tenant projetada para transformar a gestão de treinos e a experiência física dentro de pequenas e médias academias. Através de um aplicativo móvel e um motor de regras de negócio robusto, o ecossistema automatiza a criação de fichas, gerencia filas virtuais de equipamentos em tempo real e aplica gatilhos psicológicos de gamificação (Streaks e Leaderboards) para maximizar a retenção de alunos.
 
 ## 🏗 Arquitetura e Stack Tecnológica
 
@@ -36,7 +36,7 @@ O projeto adota uma arquitetura Cliente-Servidor fortemente desacoplada, orienta
     .
     └── README.md                 # Documentação principal
 
-> Nota: a estrutura de monorepo com `gymflow-backend/` e `gymflow-frontend/` ainda não está presente neste repositório. Atualize esta seção quando os módulos forem adicionados.
+> Nota: a estrutura de monorepo com `gymhub-backend/` e `gymhub-frontend/` ainda não está presente neste repositório. Atualize esta seção quando os módulos forem adicionados.
 
 ## 🚀 Como Iniciar o Ambiente (Getting Started)
 
@@ -46,15 +46,15 @@ O projeto adota uma arquitetura Cliente-Servidor fortemente desacoplada, orienta
 * [Docker](https://www.docker.com/) (Para subir o SQL Server e o Redis)
 
 ### 1. Subindo a Infraestrutura
-Na raiz do diretório `gymflow-backend`, suba os containers de banco de dados e cache:
+Na raiz do diretório `gymhub-backend`, suba os containers de banco de dados e cache:
 
-    cd gymflow-backend
+    cd gymhub-backend
     docker-compose up -d
 
 ### 2. Inicializando o Backend (Spring Boot)
 
 ```bash
-cd gymflow-backend
+cd gymhub-backend
 ./mvnw spring-boot:run
 ```
 A API estará disponível em `http://localhost:8080`.
@@ -62,7 +62,7 @@ A API estará disponível em `http://localhost:8080`.
 ### 3. Inicializando o Frontend (Flutter)
 
 ```bash
-cd gymflow-frontend
+cd gymhub-frontend
 flutter pub get
 flutter run
 ```
