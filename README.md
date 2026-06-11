@@ -2,10 +2,10 @@
 
 > Ecossistema B2B2C para academias focado em roteamento inteligente de filas, gamificação estrita e eliminação de atrito operacional.
 
-[![Status](https://img.shields.io/badge/Status-MVP%20Em%20Desenvolvimento-orange.svg)]()
-[![Backend](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen.svg)]()
-[![Mobile](https://img.shields.io/badge/Flutter-3.x-blue.svg)]()
-[![Database](https://img.shields.io/badge/SQL%20Server-Enterprise-red.svg)]()
+![Status](https://img.shields.io/badge/Status-MVP%20Em%20Desenvolvimento-orange.svg)
+![Backend](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen.svg)
+![Mobile](https://img.shields.io/badge/Flutter-3.x-blue.svg)
+![Database](https://img.shields.io/badge/SQL%20Server-Enterprise-red.svg)
 
 ## 📖 Visão Geral
 
