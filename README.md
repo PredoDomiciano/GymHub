@@ -57,9 +57,8 @@ gymflow-project/
 ### 1. Subindo a Infraestrutura
 Na raiz do diretório `gymflow-backend`, suba os containers de banco de dados e cache:
 
-```bash
-docker-compose up -d
-```
+    cd gymflow-backend
+    docker-compose up -d
 
 ### 2. Inicializando o Backend (Spring Boot)
 
