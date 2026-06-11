@@ -25,7 +25,7 @@ O projeto adota uma arquitetura Cliente-Servidor fortemente desacoplada, orienta
 
 ## ✨ Principais Motores de Negócio
 
-* **Isolamento Multi-Tenant Garantido:** Vazamento de dados matematicamente nulo. Filtragem por Inquilino (Academia) aplicada de forma global na camada ORM (Hibernate).
+* **Isolamento Multi-Tenant:** Filtragem por Inquilino (Academia) aplicada de forma global na camada ORM (Hibernate) para minimizar risco de acesso indevido entre tenants.
 * **Prova de Presença por Geofencing:** O check-in e o acesso à *Fila Virtual Inteligente* exigem validação de GPS em background. Sessões sem verificação geográfica sofrem degradação graciosa: o usuário mantém seu histórico privado, mas é bloqueado do Leaderboard.
 * **Fila Virtual Transparente:** O algoritmo de roteamento não usa numeração estática. A fila é uma representação temporal da disputa por uma máquina, reordenada passivamente sem sobrecarregar o banco de dados.
 * **Fail-Safe de Checkout Duplo:** Checkouts são disparados via evento de quebra da cerca virtual (Mobile) e garantidos por um *Job* passivo de inatividade (Backend) rodando a cada minuto.
