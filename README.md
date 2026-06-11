@@ -31,21 +31,12 @@ O projeto adota uma arquitetura Cliente-Servidor fortemente desacoplada, orienta
 * **Fail-Safe de Checkout Duplo:** Checkouts são disparados via evento de quebra da cerca virtual (Mobile) e garantidos por um *Job* passivo de inatividade (Backend) rodando a cada minuto.
 * **Punição e Gamificação (Streaks):** Rotinas noturnas cruzam a agenda do aluno com o histórico de conclusão. Ausências em dias planejados zeram instantaneamente a ofensiva, a menos que o usuário possua um "Congelamento" (Streak Freeze) disponível.
 
-## 📂 Estrutura do Monorepo
+## 📂 Estrutura do Repositório
 
-```text
-gymflow-project/
-│
-├── gymflow-backend/          # API REST (Java 17 / Spring Boot)
-│   ├── src/main/java         # Código-fonte do servidor
-│   └── pom.xml               # Dependências do Maven
-│
-├── gymflow-frontend/         # Aplicativo Móvel (Flutter)
-│   ├── lib/                  # Telas, widgets e lógica de estado
-│   └── pubspec.yaml          # Dependências do Dart
-│
-└── README.md                 # Documentação principal
-```
+    .
+    └── README.md                 # Documentação principal
+
+> Nota: a estrutura de monorepo com `gymflow-backend/` e `gymflow-frontend/` ainda não está presente neste repositório. Atualize esta seção quando os módulos forem adicionados.
 
 ## 🚀 Como Iniciar o Ambiente (Getting Started)
 
