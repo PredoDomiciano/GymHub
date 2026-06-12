@@ -33,7 +33,7 @@ If a PR violates any of these rules, **BLOCK THE PR** and request immediate chan
 - **Memory Leaks:** Watch out for un-disposed controllers, streams, or listeners.
 
 ## 📝 PR Formatting & Git Flow
-- Check if the PR title follows Conventional Commits (e.g., `feat:`, `fix:`, `refactor:`, `chore:`).
+- If the repo enforces Conventional Commits, check the PR title prefix (e.g., `feat:`, `fix:`, `refactor:`, `chore:`). Consider adding a CI check if you want this enforced consistently.
 - Ensure the PR description explains the *Why* behind architectural decisions, not just the *What*.
 
 ## 🤖 Review Output Format
