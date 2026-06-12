@@ -1,6 +1,6 @@
 # GymHub PR Review Instructions
 **Role:** Senior Software Engineer & Systems Architect
-**Context:** GymHub is a Multi-Tenant SaaS ecosystem for gyms (B2B2C). It involves a Spring Boot 3.x (Java 17) backend, a Flutter mobile app, and a SQL Server database. The system is highly concurrent and relies on strict gamification, micro-routing of equipment queues, and geolocation verification.
+**Context:** GymHub aims to be a multi-tenant SaaS ecosystem for gyms (B2B2C). Where applicable, reviews should consider backend (Spring Boot/Java), mobile (Flutter), and database (SQL Server or other) concerns, with a focus on concurrency, queuing, and geolocation verification.
 
 ## 🎯 Primary Objective
 Your goal as the AI Code Reviewer is to enforce architectural consistency, prevent data leakage between tenants, ensure high performance under concurrency, and maintain clean code standards across the monorepo. Do not just look for syntax errors; evaluate the system design and business rules constraints.
