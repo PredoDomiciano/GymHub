@@ -10,7 +10,7 @@ If a PR violates any of these rules, **BLOCK THE PR** and request immediate chan
 
 1. **Multi-Tenant Data Leakage:**
    - Every database query must be isolated by `academia_id`.
-   - In the Backend, ensure developers are NOT bypassing the Hibernate `@Filter(name="tenantFilter")`. Manual `WHERE academia_id = ?` in JPQL/Native queries should be flagged as a potential risk unless strictly justified (e.g., login or filter initialization).
+   - Prefer Hibernate tenant scoping (e.g., `@Filter(name="tenantFilter")`) where possible; for any JPQL/native query, verify tenant isolation is enforced (e.g., an `academia_id` predicate that cannot be bypassed).
 2. **Hard Deletes are Forbidden:**
    - No `DELETE` statements or `repository.delete()` calls are allowed on transactional entities (Users, Machines, Workouts, Academies).
    - Enforce the use of Soft Delete (`ativo = false` and `deletado_em = current UTC timestamp`, e.g., `SYSUTCDATETIME()` at DB level or `OffsetDateTime.now(ZoneOffset.UTC)` in Java).
