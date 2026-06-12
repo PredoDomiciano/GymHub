@@ -37,7 +37,7 @@ If a PR violates any of these rules, **BLOCK THE PR** and request immediate chan
 - Ensure the PR description explains the *Why* behind architectural decisions, not just the *What*.
 
 ## 🤖 Review Output Format
-When providing your review, structure your response as follows:
+When providing your review, cover the following areas (adapt the formatting if the review platform requires a specific template):
 1. **Security & Architecture:** (Did this PR break isolation or introduce vulnerabilities?)
 2. **Performance & DB:** (N+1 issues, missing indexes, bad UUID usage?)
 3. **Business Rules:** (Are GymHub's strict gamification and queue rules respected?)
