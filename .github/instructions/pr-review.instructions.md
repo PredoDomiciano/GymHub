@@ -25,7 +25,7 @@ If a PR violates any of these rules, **BLOCK THE PR** and request immediate chan
 - **N+1 Query Problem:** Actively look for lazy loading issues inside loops. Suggest `JOIN FETCH` or EntityGraphs where necessary.
 - **Statelessness:** Ensure no state is stored in the JVM. Authentication is strictly via JWT.
 - **Transactions:** Verify the correct use of `@Transactional`. Read-only operations should use `@Transactional(readOnly = true)`.
-- **Rate Limiting:** Any new endpoint exposed to the mobile app must be covered by the Redis/Bucket4j rate-limiting configuration.
+- **Rate Limiting:** Any new endpoint exposed to the mobile app must be covered by the project's rate-limiting mechanism; document the chosen approach and where it is configured.
 
 ## 📱 Frontend Guidelines (Flutter)
 - **Graceful Degradation:** If modifying the check-in or queue entry flow, verify that the fallback logic for users who denied GPS permissions (Manual/Offline mode) is intact.
